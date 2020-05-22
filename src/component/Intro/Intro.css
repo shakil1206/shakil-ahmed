@@ -1,0 +1,139 @@
+
+
+
+.hello{
+    font-size: 24px;
+    margin: 0px;   
+}
+
+
+.developer{
+    margin: 0px 0px 15px 0px;
+}
+
+
+.btn-success{
+    margin-right: 20px;
+}
+
+.col-md-12{
+    padding-top: 20%;
+}
+  
+@media screen and (max-width: 600px) {
+    .bg-color{
+        background-color: #111a28;
+        height: 610px;
+    }
+
+    .text-color{
+        color: white;
+        font-weight: bolder;
+        font-size: 250%;
+        margin: 0 0 24px 0;
+    }
+    .col-md-12{
+        text-align: center;
+    }
+    .back-line{
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .front-box{
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .back-line{
+        position: relative;
+        height: 1px;
+        width: 80%;
+        background-color: white;
+        
+    }
+
+    .front-box{
+        background-color: #1d293a ;
+        height: 30px;
+        border-radius: 4px;
+        padding: 10px 30px;
+    }
+    
+    .front-box p{
+        color: white;
+        margin-top: 15px;
+        text-align: center;
+        font-weight: 900;
+        text-transform: uppercase;
+    }    
+       
+    .icon{
+        position: absolute;
+        font-size: 24px;
+        left: 0;
+        right: 0;
+        margin: 30px auto;        
+    }
+
+    .icon .icon2{
+        margin: 5%;
+        color: white;
+    }
+  }
+
+
+  @media screen and (min-width: 601px) {
+
+    .bg-color{
+        background-color: #111a28;
+        height: 810px;
+    }
+
+    .text-color{
+        color: white;
+        font-weight: bolder;
+        font-size: 65px;
+        margin: 0 0 24px 0;
+    }
+      
+    .back-line{
+        position: relative;
+        height: 1px;
+        width: 250px;
+        background-color: white;
+        
+    }
+
+    .front-box{
+        background-color: #1d293a ;
+        height: 30px;
+        border-radius: 4px;
+        padding: 10px 30px;
+    }
+    
+    .front-box p{
+        color: white;
+        margin-top: 15px;
+        text-align: center;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    .icon{
+        font-size: 24px;
+        margin-top: 30px;
+             
+    }
+
+    .icon .icon2{
+        margin-right: 35px;
+        color: white;
+    }    
+    
+       
+  }
+  
+  

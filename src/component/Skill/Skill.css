@@ -1,0 +1,13 @@
+@media screen and (min-width:601px){
+    .skill-bgColor{
+        background-color: #111a28;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .skill-bgColor{
+        background-color: #111a28;
+        height: 600px;
+    }
+}
