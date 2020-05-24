@@ -7,6 +7,8 @@ import Skill from './component/Skill/Skill';
 import LoveToDo from './component/LoveToDo/LoveToDo';
 import Projects from './component/Projects/Projects';
 
+
+
 function App() {
   return (
     <>
@@ -17,6 +19,7 @@ function App() {
     <LoveToDo></LoveToDo>
     <Projects></Projects>
     </>
+    
   );
 }
 
