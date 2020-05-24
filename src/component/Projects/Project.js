@@ -1,4 +1,5 @@
 import React from 'react';
+import './Projects.css';
 
 const Project = (props) => {
 
@@ -6,7 +7,7 @@ const Project = (props) => {
 
     return (
         <div className="col-md-4">
-            <div className="card-group">
+            <div className="card-group card-style">
                 <div className="card">
                     <img src={img} className="card-img-top" alt={title} />
                     <div className="card-body">
