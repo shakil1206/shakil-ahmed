@@ -28,8 +28,8 @@ const Projects = () => {
 
 
     return (
-        <div className="container skill">
-            <div className="back-line d-flex align-items-center skill-title">
+        <div id="project-section" className="container skill">
+            <div  className="back-line d-flex align-items-center skill-title">
                 <div className="front-box d-flex align-items-center">
                     <p className="d-flex align-items-center">Projects</p>
                 </div>

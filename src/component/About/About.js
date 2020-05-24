@@ -10,8 +10,8 @@ const About = () => {
     }, [])
 
     return (
-        <div className="container about">
-            <div className="back-line d-flex align-items-center">
+        <div id="about-section" className="container about">
+            <div  className="back-line d-flex align-items-center">
                 <div className="front-box d-flex align-items-center">
                     <p className="d-flex align-items-center">About Me</p>
                 </div>

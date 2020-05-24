@@ -7,8 +7,8 @@ import { AiOutlineMedium, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
 
 const Intro = () => {
     return (
-        <div className="container intro">
-            <div className="col-md-12">
+        <div  className="container intro">
+            <div id="intro-section" className="col-md-12">
                 <p className="text-success hello">Hello! I am</p>
                 <h1 className="name-color">Shakil Ahmed</h1>
                 <h3 className="font-weight-bolder text-success developer">

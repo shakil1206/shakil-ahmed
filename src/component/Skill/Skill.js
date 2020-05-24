@@ -72,8 +72,8 @@ const Skill = () => {
     }
 
     return (
-        <div className="container skill">
-            <div className="back-line d-flex align-items-center skill-title">
+        <div id="skill-section" className="container skill">
+            <div  className="back-line d-flex align-items-center skill-title">
                 <div className="front-box d-flex align-items-center">
                     <p className="d-flex align-items-center">My Skills</p>
                 </div>
