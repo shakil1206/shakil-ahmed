@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Contact.css';
 import { useForm } from "react-hook-form";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { IoMdCloudDone } from 'react-icons/io';
+
 
 
 const Contact = () => {
@@ -11,9 +13,24 @@ const Contact = () => {
         Aos.init({ duration: 2000 });
     }, [])
 
+    const [success, setSuccess] = useState(true);
+
 
     const { register, handleSubmit, watch, errors } = useForm();
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => {
+        fetch('http://localhost:4200/getGmail', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }
+        })
+            .then(response => response.json())
+            .then(data => console.log(data));
+
+        setSuccess(false);
+    }
+
 
     return (
         <div id="contact-section" className="container skill">
@@ -23,21 +40,36 @@ const Contact = () => {
                 </div>
             </div>
             <div data-aos="flip-left" className="row d-flex justify-content-center ">
-                <div className="col-md-6">
-                    <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
+                {
+                    success ?
+                        <div className="col-12 col-sm-12 col-md-6">
+                            <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
 
-                        <input className="form-control" name="name" ref={register({ required: true })} placeholder="Your Name" />
-                        {errors.name && <span className="error">Name is required</span>}
-                        <br />
-                        <input className="form-control" name="email" ref={register({ required: true })} placeholder="Your Email" />
-                        {errors.email && <span className="error">Email is required</span>}
-                        <br />
-                        <textarea className="form-control" name="message" ref={register({ required: true })} placeholder="Enter Your Message" />
-                        {errors.message && <span className="error">Your Text is required</span>}
-                        <br />
-                        <input className="form-control btn btn-success" type="submit" value="Submit" />
-                    </form>
-                </div>
+                                <input className="form-control" name="name" ref={register({ required: true })} placeholder="Your Name" />
+                                {errors.name && <span className="error">Name is required</span>}
+                                <br />
+                                <input className="form-control" name="email" ref={register({ required: true })} placeholder="Your Email" />
+                                {errors.email && <span className="error">Email is required</span>}
+                                <br />
+                                <input className="form-control" name="subject" ref={register({ required: true })} placeholder="Subject" />
+                                {errors.subject && <span className="error">Subject is required</span>}
+                                <br />
+                                <textarea className="form-control" name="message" ref={register({ required: true })} placeholder="Enter Your Message" />
+                                {errors.message && <span className="error">Your Text is required</span>}
+                                <br />
+                                <input className="form-control btn btn-success" type="submit" value="Submit" />
+                            </form>
+                        </div>
+                        :
+                        <div className="col-12 col-sm-12 col-md-6">
+                            <div className="Sucess-div">
+                                <h1 className="d-flex justify-content-center align-items-center">Thanks!</h1>
+                                <h2 className="d-flex justify-content-center align-items-center"><IoMdCloudDone></IoMdCloudDone></h2>
+                                <h1 className="d-flex justify-content-center align-items-center">Received Message!</h1>
+                                <h1 className="d-flex justify-content-center align-items-center"><span className="success-heart">&hearts;</span></h1>
+                            </div>
+                        </div>
+                }
             </div>
         </div>
     );
