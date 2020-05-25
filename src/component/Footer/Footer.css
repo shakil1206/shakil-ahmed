@@ -1,0 +1,23 @@
+.foooter{
+    height: 100px;
+    background-color: #182335;
+    color: white;
+}
+
+.copy{
+    padding: 2% 0%;
+}
+
+
+.dev a{
+    color: white;
+    font-size: 200%;
+}
+.dev a:hover{
+    color: #28a745;
+}
+
+.heart{
+    color: red;
+    font-size: 150%;
+}
