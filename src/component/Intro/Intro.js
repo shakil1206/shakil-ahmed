@@ -3,6 +3,8 @@ import './Intro.css';
 import Typical from 'react-typical';
 import { FaGithubSquare } from 'react-icons/fa';
 import { AiOutlineMedium, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
+import CV from '../../images/CV/ShakilAhmed.pdf';
+
 
 
 const Intro = () => {
@@ -19,8 +21,8 @@ const Intro = () => {
                         wrapper="b"
                     />
                 </h3>
-                <button className="btn btn-success my-2 my-sm-0 btn-style">Get Resume</button>
-                <button className="btn btn-outline-success my-2 my-sm-0 btn-style">About Me</button>
+                <a href={CV} download="Shakil Ahmed CV"><button className="btn btn-success my-2 my-sm-0 btn-style">Get Resume</button></a>
+                <a href="#about-section"><button className="btn btn-outline-success my-2 my-sm-0 btn-style">About Me</button></a>
                 <br />
                 <br />
 

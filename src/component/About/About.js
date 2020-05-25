@@ -3,6 +3,8 @@ import './About.css';
 import shakil from '../../images/ShakilAhmed.png';
 import Aos from "aos";
 import "aos/dist/aos.css";
+import CV from '../../images/CV/ShakilAhmed.pdf';
+
 
 const About = () => {
     useEffect(() => {
@@ -22,8 +24,8 @@ const About = () => {
                 </div>
                 <div data-aos="flip-up" className="col-md-8 about-mySelf">
                     <p>Hello, I'm Shakil Ahmed, a passionate computer engineer. I currently develop web and desktop applications. My core skill is based on JavaScript and Java. I love to make the web more open to the world. I love programming. (Curious Programmer). I am currently pursuing my bachelor's degree at the Green University of Bangladesh, Dhaka, Bangladesh(7th Semester Running). I am available for any good opportunities.</p>
-                    <button className="btn btn-success my-2 my-sm-0 btn-style">Get Resume</button>
-                    <button className="btn btn-outline-success my-2 my-sm-0 btn-style">My Skill</button>
+                    <a href={CV} download="Shakil Ahmed CV"><button className="btn btn-success my-2 my-sm-0 btn-style">Get Resume</button></a>
+                    <a href="#skill-section"><button className="btn btn-outline-success my-2 my-sm-0 btn-style">My Skill</button></a>
                 </div>
             </div>
         </div>
