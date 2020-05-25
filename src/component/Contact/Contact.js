@@ -18,7 +18,7 @@ const Contact = () => {
 
     const { register, handleSubmit, watch, errors } = useForm();
     const onSubmit = data => {
-        fetch('http://localhost:4200/getGmail', {
+        fetch('https://ancient-cliffs-08982.herokuapp.com/getGmail', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
