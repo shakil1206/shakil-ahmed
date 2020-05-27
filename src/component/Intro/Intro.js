@@ -25,6 +25,8 @@ const Intro = () => {
                 <a href="#about-section"><button className="btn btn-outline-success my-2 my-sm-0 btn-style">About Me</button></a>
                 <br />
                 <br />
+                <br/>
+                <br/>
 
                 <div className="back-line d-flex align-items-center">
                     <div className="front-box d-flex align-items-center">

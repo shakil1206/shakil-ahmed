@@ -32,6 +32,10 @@ const Contact = () => {
     }
 
 
+    const handleReturn=()=>{
+        setSuccess(true)
+    }
+
     return (
         <div id="contact-section" className="container skill">
             <div className="back-line d-flex align-items-center skill-title">
@@ -67,6 +71,7 @@ const Contact = () => {
                                 <h2 className="d-flex justify-content-center align-items-center"><IoMdCloudDone></IoMdCloudDone></h2>
                                 <h1 className="d-flex justify-content-center align-items-center">Received Message!</h1>
                                 <h1 className="d-flex justify-content-center align-items-center"><span className="success-heart">&hearts;</span></h1>
+                                <button onClick={handleReturn} className="btn btn-success my-2 my-sm-0 btn-margin">Return</button>
                             </div>
                         </div>
                 }
