@@ -32,7 +32,7 @@ const Contact = () => {
     }
 
 
-    const handleReturn = () => {
+    const handleReturn=()=>{
         setSuccess(true)
     }
 
@@ -69,7 +69,8 @@ const Contact = () => {
                             <div className="Sucess-div">
                                 <h1 className="d-flex justify-content-center align-items-center">Thanks!</h1>
                                 <h2 className="d-flex justify-content-center align-items-center"><IoMdCloudDone></IoMdCloudDone></h2>
-                                <h1 className="d-flex justify-content-center align-items-center">Message Received</h1>
+                                <h1 className="d-flex justify-content-center align-items-center">Message Received!</h1>
+                                <h1 className="d-flex justify-content-center align-items-center"><span className="success-heart">&hearts;</span></h1>
                                 <button onClick={handleReturn} className="btn btn-success my-2 my-sm-0 btn-margin">Return</button>
                             </div>
                         </div>
