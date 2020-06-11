@@ -9,8 +9,6 @@ import Projects from './component/Projects/Projects';
 import Contact from './component/Contact/Contact';
 import Footer from './component/Footer/Footer';
 
-
-
 function App() {
   return (
     <>
