@@ -1,5 +1,5 @@
 .about{
-    margin-top: 20%;
+    padding-top: 150px;
 }
 
 
@@ -9,6 +9,7 @@
     filter: grayscale(1);
     transition: all 1s;
     transition-timing-function: ease;
+    cursor: pointer;
     
 }
 
@@ -29,7 +30,6 @@
 @media only screen and (min-width: 150px) and (max-width:244px) {
 
     .about{
-        margin-top: 60%;
         text-align: center;
     }
 
@@ -46,7 +46,6 @@
 
 @media only screen and (min-width: 245px) and (max-width:350px){
     .about{
-        margin-top: 60%;
         text-align: center;
     }
 
@@ -63,7 +62,6 @@
 
 @media only screen and (min-width: 351px) and (max-width:500px){
     .about{
-        margin-top: 60%;
         text-align: center;
     }
 
@@ -79,13 +77,12 @@
 
 @media only screen and (min-width: 501px) and (max-width:700px){
     .about{
-        margin-top: 60%;
         text-align: center;
     }
 
     .img-size img{
         margin-top: 25%;
-        width: 60%;
+        width: 40%;
     }
 
     .about-mySelf p{

@@ -1,5 +1,5 @@
 .skill{
-    margin-top: 20%;
+    padding-top: 150px;
 }
 
 .skill-title{
@@ -13,6 +13,7 @@
 
     .skill{
        text-align: center;
+       
     }
 }
 

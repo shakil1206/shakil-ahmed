@@ -5,7 +5,11 @@ body{
 
 
 .intro{
-    margin-top: 20%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 450px;
 }
 
 .hello{
@@ -67,6 +71,7 @@ body{
     
     .intro{
         text-align: center;
+        height: 40vh;
     }
 
     .hello{
@@ -144,6 +149,7 @@ body{
     
     .intro{
         text-align: center;
+        height: 40vh;
     }
 
     .hello{
@@ -220,6 +226,7 @@ body{
     
     .intro{
         text-align: center;
+        height: 80vh;
     }
 
     .hello{

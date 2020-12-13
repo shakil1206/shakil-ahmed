@@ -15,8 +15,8 @@ const Contact = () => {
 
     const [success, setSuccess] = useState(true);
 
-
-    const { register, handleSubmit, watch, errors } = useForm();
+                                    // watch,
+    const { register, handleSubmit,  errors } = useForm();
     const onSubmit = data => {
         fetch('https://ancient-cliffs-08982.herokuapp.com/getGmail', {
             method: 'POST',
@@ -32,15 +32,52 @@ const Contact = () => {
     }
 
 
-    const handleReturn=()=>{
+    const handleReturn = () => {
         setSuccess(true)
     }
 
+
+
+
+
+
     return (
-        <div id="contact-section" className="container skill">
+        <div id="contact-section" className="container skill contact-section">
             <div className="back-line d-flex align-items-center skill-title">
                 <div className="front-box d-flex align-items-center">
                     <p className="d-flex align-items-center">Contact</p>
+                </div>
+            </div>
+
+
+            <div className="row">
+                <div className="col-12 col-md-6">
+                    <article className="contact-me">
+                        <p>
+                            I am interested in working with any company that thinks my skill will be helpful for them. If you are looking for someone like me, please let me know. Or you can just 'say hi' to me.
+                        </p>
+
+                        <a href="mailto:shakilatrai5@gmail.com" >Contact Me</a>
+                    </article>
+
+                </div>
+                <div className="col-12 col-md-6">
+                    <div className="contact-add">
+                        <h3>Email</h3>
+                        <p>shakilatrai5@gmail.com (Recommended)</p>
+                        <h3>Skype</h3>
+                        <p>shakil.cse.ieee</p>
+                        <h3>Social</h3>
+                        <p>Facebook - cseshakil</p>
+                        <h3>Address</h3>
+                        <address>
+                            <p>Nawaber Tambu, Atrai, Naogaon, Bangladesh-6596</p>
+                        </address>
+                    </div>
+                </div>
+
+                <div className="col-12 text-center contact-or">
+                    <h4>Or</h4>
                 </div>
             </div>
             <div data-aos="flip-left" className="row d-flex justify-content-center ">

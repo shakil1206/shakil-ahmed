@@ -1,5 +1,53 @@
+.contact-section{
+    padding-bottom: 150px;
+}
+
+.contact-me{
+    padding: 20px 0;
+}
+
+.contact-me a{
+    text-decoration: none;
+    background-color: #28a745;
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    border: 2px solid #111a28;
+    transition: all .45s;
+    margin-top: 10px;
+}
+
+.contact-me a:hover{
+    background-color: #111a28;
+    color: #28a745;
+    border: 2px solid #28a745;
+    transition: all .45s;
+}
+
+
+
+.contact-add h3{
+    color: rgb(231, 226, 226);
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-add p{
+    color: rgb(223, 218, 208);
+    margin: 0 0 6px 0;
+}
+
+
+.contact-or h4{
+    color: rgb(223, 218, 208);
+    font-size: 35px;
+    padding: 20px 0;
+}
+
 .contact-form{
-    margin-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 .btn-margin{

@@ -20,7 +20,7 @@ const About = () => {
             </div>
             <div className="row">
                 <div data-aos="flip-down" className="col-md-4 img-size">
-                    <img src={shakil} alt="Shakil Ahmed" />
+                    <img src={shakil} alt="Shakil Ahmed Web Developer" />
                 </div>
                 <div data-aos="flip-up" className="col-md-8 about-mySelf">
                     <p>Hello, I'm Shakil Ahmed, a passionate computer engineer. I currently develop web and desktop applications. My core skill is based on JavaScript and Java. I love to make the web more open to the world. I love programming. (Curious Programmer). I am currently pursuing my bachelor's degree at the Green University of Bangladesh, Dhaka, Bangladesh(7th Semester Running). I am available for any good opportunities.</p>
