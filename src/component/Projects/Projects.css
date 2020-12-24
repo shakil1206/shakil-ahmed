@@ -1,27 +1,56 @@
-.card-style{
+.card-style {
     margin-bottom: 12%;
 }
 
-.card{
+.card {
     background-color: #111a28;
 }
 
-.card h5, p, a{
+
+
+
+.screen {
+    height: 220px;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.screen img {
+    object-fit: cover;
+    overflow: hidden;  
+    transition: transform 2s ease-in-out;
+    width: 100%;
+    cursor: pointer;
+}
+
+.screen:hover img {
+    transform: translateY(calc(-100% + 220px));
+    transition: transform 4s ease-in-out;
+}
+
+
+
+
+
+.card h5,
+p,
+a {
     color: white;
 }
 
-.card a{
+.card a {
     font-size: 170%;
     margin-right: 2%;
 }
 
 
-.card a:hover{
+.card a:hover {
     color: #218838;
 }
 
-.card:hover{
+.card:hover {
     background: #1d293a;
-    box-shadow:  10px 10px 20px #121923; 
+    box-shadow: 10px 10px 20px #121923;
 
 }
